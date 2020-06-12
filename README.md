@@ -1,4 +1,5 @@
-# Encurtador de URL
+# Encurtador de URL 
+[![Build Status](https://travis-ci.org/dalmasjunior/encurtador.svg?branch=master)](https://travis-ci.org/dalmasjunior/encurtador)
 
 Este Encurtador de URL foi desenvolvido com o intuito de testar e adquirir conhecimento no desenvolvimento de APIs com as tecnologias **NodeJs**, **TypeScript** e **Express**.
 <br>
