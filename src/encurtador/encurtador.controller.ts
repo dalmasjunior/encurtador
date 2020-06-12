@@ -21,16 +21,15 @@ class EncurtadorController implements Controller {
     this.router.get('/:code', this.accessCode);
   }
 
-  private encurtarUrl = (req: express.Request, res: express.Response) => {
+  private encurtarUrl = async (req: express.Request, res: express.Response) => {
     const code = this.genUrlCode();
     const expiration = new Date(this.setExpirationDate(process.env.EXPIRATION_TIME));
     const shortUrl: IEncurtador = { ...req.body, code, expiration };
 
     const shortenedUrl = new this.encurtador(shortUrl);
-    shortenedUrl.save()
-      .then((savedUrl) => {
-        res.status(201).send({ newurl: `http://localhost:8081/${savedUrl.code}` });
-      });
+    await shortenedUrl.save();
+    res.status(201).json({ newurl: `http://localhost:8081/${shortUrl.code}` });
+    res.end();
   }
 
   private accessCode = (req: express.Request, res: express.Response, next: express.NextFunction) => {
