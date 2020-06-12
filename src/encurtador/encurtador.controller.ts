@@ -28,8 +28,8 @@ class EncurtadorController implements Controller {
 
     const shortenedUrl = new this.encurtador(shortUrl);
     await shortenedUrl.save();
-    res.status(201).json({ newurl: `http://localhost:8081/${shortUrl.code}` });
-    res.end();
+    
+    res.status(201).json({ newurl: `${req.hostname}:${process.env.PORT}/${shortUrl.code}` });     
   }
 
   private accessCode = (req: express.Request, res: express.Response, next: express.NextFunction) => {
