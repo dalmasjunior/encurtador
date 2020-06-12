@@ -6,9 +6,9 @@ import validateEnv from './utils/validateEnv';
 validateEnv();
 
 const app = new App(
-    [
-        new EncurtadorController(),
-    ]
+  [
+    new EncurtadorController(),
+  ]
 );
 
 app.listen();

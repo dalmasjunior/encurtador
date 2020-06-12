@@ -1,5 +1,5 @@
 export default interface Encurtador {
-    code: string;
-    url: string;
-    expiration: Date
-};
+  code: string;
+  url: string;
+  expiration: Date;
+}
