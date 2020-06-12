@@ -1,8 +1,10 @@
 lenguage: node_js
 node_js:
-  - lts/*
+- lts/*
 script:
-  - "npm run lint"
-  - "npm run test"
+- npm run lint
+- npm run test
 deploy:
   provider: heroku
+  api_key:
+    secure: TfS2ZZcBlkaey9nqHcLJrUi6NcVSXqwRLHwUcGcZQ6E4DVTGyTq72cdgKT64KY74Djc8ooScDbO7E3kz/M7DypXnRqNuOsvsfc6k/J33KWTvJILsTbFlu3oe+AUxr3xHD1rJdiNiiRZMluBb0NEUzqabxZiRNr4/rzXm1baTP2Tsp9us5vFPxQt/E0CPb/MdRSPyRL7ZP3l2i2SMt6XyQmK007/IANnTv8c/N/7Bx5Sv2tiXyqjCKuKi6dUtn1lq1kpi1rpMDNX6xE406VX4r864Ie++/P1W+XKx87Gd7TG49fwipRr4G9PVTuVVXWlriqLFlazrCg1Pub08NLQ7hAiOxAGkfaQ4/xW1Z6dSwI6cyHXJrJ4+yP4aqOfCQLJ6RusV2JWUIZcHyyEQGwFrDnrCdkmFr691plZSsjSObjM+vgxnkT1iOh5Mauliev4HGYCMihPMizPPgktoJWYPLinqJRC/Aq/4nFKss0Lf9zuumi1u4qfPK5rRYMBLhEpv75LhQfzkV3VLP3cqflplzRE6bldH/iKthWjS82aJ06BuXo+Eh9cqk5dxn/70WPn+j4bUg/+qqcIlg88FDlJCmCcSM+rUzE1qIYQouwGoiWSMfDg9xbLGl/PP0GMJ7/PbB/kc9+SshhNGquQpqVOY7OW7F+HiYJbnI4R9XON/LRQ=
