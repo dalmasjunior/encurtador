@@ -3,7 +3,7 @@
 
 Este Encurtador de URL foi desenvolvido com o intuito de testar e adquirir conhecimento no desenvolvimento de APIs com as tecnologias **NodeJs**, **TypeScript** e **Express**.
 <br>
-Além destas tecnologias foi utilizado como Banco de dados o **MongoDB**, CI/CD com **Travis** e deploy fetio no **Heroku**.
+Além destas tecnologias foi utilizado como Banco de dados o **MongoDB**, CI/CD com **Travis** e deploy feito no **Heroku**.
 
 ### How To
 
@@ -20,7 +20,7 @@ E, finalmente, para rodar em ambiente *local* utilize o comando:
 
 Para encurtar uma url envie um *POST* para *http://localhost:8081/encurtador* com um *JSON* no body seguindo o exemplo abaixo:
 > {
-  "url": "http://wisereducacao.com"
+  "url": "http://google.com"
 }
 
 A API irá encurtar a url, armazenar a informação no MongoDB e retornar a url com o código de acesso a url encurtada no formato *JSON*:
